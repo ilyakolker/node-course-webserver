@@ -47,6 +47,14 @@ app.get('/about', (req, res) => {
   });
 });
 
+//portfolio - move to portfolio page
+
+app.get('/portfolio',(req,res)=>{
+  res.render('portfolio.hbs',{
+    pageTitle : "Portfolio page"
+  });
+});
+
 // /bad - send back json with errorMessage
 app.get('/bad', (req, res) => {
   res.send({
